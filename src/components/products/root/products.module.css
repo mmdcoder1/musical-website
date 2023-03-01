@@ -1,0 +1,29 @@
+.container {
+    margin-top: 2rem;
+    padding-right: 1rem;
+    position: relative;
+}
+
+.products {
+    width: 80rem;
+    height: 26rem;
+    overflow: auto;
+}
+
+.products::-webkit-scrollbar {
+    display: none;
+}
+
+.productsInside {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1.2rem;
+}
+
+.shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+

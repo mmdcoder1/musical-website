@@ -1,0 +1,53 @@
+.container {
+    padding: 1rem;
+    border-radius: var(--small-radius);
+    background-color: var(--gray);
+    width: 340px;
+}
+
+.imageContainer {
+    background-color: var(--white);
+    border-radius: var(--small-radius);
+    padding: 0.5rem;
+    position: relative;
+}
+
+.imageContainer::after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: var(--brown-light);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.imageContainer::before {
+    content: '';
+    position: absolute;
+    top: 26px;
+    left: 12px;
+    background-color: var(--black);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.image {
+    max-width: 100%;
+    max-height: 70%;
+}
+
+.btn {
+    padding: 0.9rem 1rem;
+	font-size: 0.8rem;
+}
+
+.starText, .text {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    font-weight: 500;
+}

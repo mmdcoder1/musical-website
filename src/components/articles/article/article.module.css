@@ -1,0 +1,50 @@
+.container {
+    flex-basis: 50%;
+    border-radius: var(--small-radius);
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+    height: 10rem;
+}
+
+.image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.title {
+    font-weight: 900;
+    font-size: 1.3rem;
+}
+
+.text { opacity: 0.8; }
+
+.details {
+    width: 100%;
+}
+
+.btnContainer {
+    box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.14);
+    backdrop-filter: blur(5.5px);
+    border-radius: var(--radius);
+    transition: 300ms;
+    padding-left: 10px;
+}
+
+
+.btn {
+    border: 1px solid var(--white);
+    width: 100%;
+    padding: 0.8rem 1.2rem;
+    border-radius: var(--radius);
+    cursor: pointer;
+}
+
+.btnContainer:hover {
+     transform: translateX(-1rem);
+     gap: 1rem;
+}
