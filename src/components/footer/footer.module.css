@@ -1,0 +1,96 @@
+.container {
+    background-color: #0c0c0c;
+    padding: 4rem 3rem 0rem 3rem;
+    border-radius: var(--small-radius) var(--small-radius) 0 0;
+    color: var(--white);
+    position: relative;
+}
+
+.link {
+    color: var(--white);
+    display: block;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    padding-right: 1rem;
+    border-right: 2px solid #5C5C5C;
+    font-weight: bold;
+    opacity: 0.6;
+}
+
+.link.active {
+   opacity: 1;
+   border-right-color: #C86628;
+   background: linear-gradient(239.91deg, rgb(200, 102, 40, .2) 11.21%, rgba(200, 102, 40, 0) 60.7%);
+}
+
+.input {
+    background-color: var(--black);
+    border: none;
+    padding: 1rem;
+    box-shadow: inset 0 0 0.5px 1px hsla(0, 0%,  
+    100%, 0.075),
+    0 0 0 1px hsla(0, 0%, 0%, 0.05),
+    0 0.3px 0.4px hsla(0, 0%, 0%, 0.02),
+    0 0.9px 1.5px hsla(0, 0%, 0%, 0.045),
+    0 3.5px 6px hsla(0, 0%, 0%, 0.09);
+    width: 18rem;
+    border-radius: var(--radius);
+    outline: none;
+    font-size: 1rem;
+    font-family: dana;
+    color: var(--white);
+}
+
+.footerBottom {
+    margin-top: 2rem;
+    border-top: 2px solid rgba(92, 92, 92, 1);
+    padding: 2rem;
+}
+
+.arrowUpContainer {
+    position: absolute;
+    top: -38px;
+    left: 50%;
+    background-color: var(--white);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrowUpBtn {
+    background-color: var(--black);
+    color: var(--white);
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 50%;
+    transition: 300ms;
+}
+
+.arrowUpContainer::after {
+    content: '';
+    position: absolute;
+    top: 2.35rem;
+    left: -1.67rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: #0c0c0c;
+    border-radius: var(--small-radius);
+}
+
+.arrowUpContainer::before {
+    content: '';
+    position: absolute;
+    top: 2.35rem;
+    right: -1.67rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: #0c0c0c;
+    border-radius: var(--small-radius);
+}
+
+.arrowUpBtn:hover {
+    transform: translateY(-3px);
+}

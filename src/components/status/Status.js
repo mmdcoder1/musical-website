@@ -8,7 +8,7 @@ import { statusData } from './data';
 
 const Status = () => {
     return (
-        <div className={`flex p-1 justify-around ${styles.container}`}>
+        <div className={`section-margin flex p-1 justify-around ${styles.container}`}>
             
            {
                 statusData.map(item =>

@@ -1,0 +1,95 @@
+.container {
+    margin-top: 8rem;
+    position: relative;
+}
+
+.titleContainer {
+    margin-left: auto;
+    margin: auto;
+    margin-bottom: 10rem;
+    width: fit-content;
+    position: relative;
+}
+
+.bg {
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.noteGroup {
+    position: absolute;
+    top: -3rem;
+    right: -3rem;
+    z-index: -1;
+}
+
+.slider {
+    margin: 6rem auto;
+    width: 62rem;
+    height: 26rem;
+    position: relative;
+}
+
+.slide {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   width: 32rem;
+   height: 14rem;
+   border-radius: 10px;
+   padding: 1rem;
+   background: var(--gray);
+   
+}
+
+.slide:first-child{
+    animation: slide2 20s linear infinite;
+ }
+
+.slide:nth-child(2){
+   animation: slide1 20s linear infinite;
+}
+
+.slide:nth-child(3){
+    animation: slide4 20s linear infinite;
+}
+
+.slide:nth-child(4){
+    animation: slide3 20s linear infinite;
+}
+
+@keyframes slide1 {
+    0% { transform: translate(-50%,-50%); z-index: 3; box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38); filter: blur(0); }
+    25% { transform: translate(-10%,-50%) scale(0.8); z-index: 2; box-shadow: 3.0px 6.0px 8.0px hsl(0deg 0% 0% / 0.38); filter: blur(4.5px);  }
+    50% {  transform: translate(-50%,-50%) scale(0.7); z-index: 1; box-shadow: 2.0px 4.0px 8.0px hsl(0deg 0% 0% / 0.38); filter: blur(4.5px); }
+    75% { transform: translate(-100%,-50%) scale(0.8); z-index: 2; box-shadow: 1.0px 2.0px 8.0px hsl(0deg 0% 0% / 0.38); filter: blur(4.5px); }
+    100% { transform: translate(-50%,-50%) scale(1); z-index: 3; box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38); filter: blur(0); }
+}
+
+@keyframes slide2 {
+    0% { transform: translate(-10%,-50%) scale(0.8); z-index: 2; box-shadow: 3.0px 6.0px 8.0px hsl(0deg 0% 0% / 0.38); filter: blur(4.5px); }
+    25% { transform: translate(-50%,-50%) scale(0.7); z-index: 1; box-shadow: 2.0px 4.0px 8.0px hsl(0deg 0% 0% / 0.38); filter: blur(4.5px); }
+    50% {  transform: translate(-100%,-50%) scale(0.8); z-index: 2; box-shadow: 1.0px 2.0px 8.0px hsl(0deg 0% 0% / 0.38); filter: blur(4.5px); }
+    75% { transform: translate(-50%,-50%) scale(1); z-index: 3; box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38); filter: blur(0); }
+    100% { transform: translate(-10%,-50%) scale(0.8); z-index: 2; box-shadow: 3.0px 6.0px 8.0px hsl(0deg 0% 0% / 0.38); filter: blur(4.5px); }
+}
+
+@keyframes slide3 {
+    0% { transform: translate(-50%,-50%) scale(0.7); z-index: 1; box-shadow: 2.0px 4.0px 8.0px hsla(0, 27%, 6%, 0.38); filter: blur(4.5px); }
+    25% { transform: translate(-100%,-50%) scale(0.8); z-index: 2; box-shadow: 1.0px 2.0px 8.0px hsl(0deg 0% 0% / 0.38); filter: blur(4.5px);  }
+    50% {  transform: translate(-50%,-50%) scale(1); z-index: 3; box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38); filter: blur(0); }
+    75% { transform: translate(-10%,-50%) scale(0.8); z-index: 2; box-shadow: 3.0px 6.0px 8.0px hsl(0deg 0% 0% / 0.38); filter: blur(4.5px); }
+    100% { transform: translate(-50%,-50%) scale(0.7); z-index: 1; box-shadow: 2.0px 4.0px 8.0px hsl(0deg 0% 0% / 0.38); filter: blur(4.5px); }
+}
+
+
+@keyframes slide4 {
+    0% { transform: translate(-100%,-50%) scale(0.8); z-index: 2; box-shadow: 1.0px 2.0px 8.0px hsl(0deg 0% 0% / 0.38); filter: blur(4.5px); }
+    25% {  transform: translate(-50%,-50%) scale(1); z-index: 3; box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38); filter: blur(0);}
+    50% {  transform: translate(-10%,-50%) scale(0.8); z-index: 2; box-shadow: 3.0px 6.0px 8.0px hsl(0deg 0% 0% / 0.38); filter: blur(4.5px);}
+    75% { transform: translate(-50%,-50%) scale(0.7); z-index: 1; box-shadow: 2.0px 4.0px 8.0px hsl(0deg 0% 0% / 0.38); filter: blur(4.5px);}
+    100% { transform: translate(-100%,-50%) scale(0.8); z-index: 2; box-shadow: 1.0px 2.0px 8.0px hsl(0deg 0% 0% / 0.38); filter: blur(4.5px);}
+}

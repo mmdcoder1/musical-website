@@ -9,7 +9,7 @@ import { articlesData } from './data';
 
 const Articles = () => {
     return (
-        <div className={`flex gap-2 ${styles.container}`}>
+        <div className={`section-margin  flex gap-2 ${styles.container}`}>
             { articlesData.map(article => <Article key={article.id} article={article} />) }
         </div>
     );

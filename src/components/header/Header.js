@@ -11,9 +11,9 @@ import {
 } from 'iconsax-react';
 
 const Header = () => {
-    const [show, setShow] = useState(true);
+    // const [show, setShow] = useState(true);
     return (
-        <div className='flex justify-space'>
+        <div style={{ marginTop: '3rem' }} className='section-margin flex justify-space'>
             <img src={logo} />
                 <nav>
                     <ul className='flex gap-4'>

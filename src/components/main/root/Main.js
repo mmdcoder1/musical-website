@@ -13,7 +13,7 @@ import LeftColumn from '../left-column/LeftColumn';
 
 const Main = () => {
     return (
-        <main className={`flex flex-align-start justify-space ${styles.container}`}>
+        <main className={`section-margin flex flex-align-start justify-space ${styles.container}`}>
             <RightColumn />
             <LeftColumn />
         </main>

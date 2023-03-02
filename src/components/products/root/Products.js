@@ -15,7 +15,7 @@ import { ArrowCircleRight } from 'iconsax-react';
 
 const Products = () => {
     return (
-        <div className={`flex gap-1 ${styles.container}`}>
+        <div className={`section-margin flex gap-1 ${styles.container}`}>
             <div className='flex gap-1'>
                 <ArrowCircleRight
                     color='#999'

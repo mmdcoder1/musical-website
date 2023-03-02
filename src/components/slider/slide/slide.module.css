@@ -1,0 +1,40 @@
+.time, .name {
+    opacity: 0.7;
+    font-size: 0.9rem;
+}
+
+.image {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.text {
+    font-weight: 600;
+}
+
+.liked_container {
+    background-color: var(--white);
+    position: relative;
+    padding: 0.4rem;
+    width: 3.8rem;
+    border-radius: var(--small-radius);
+}
+
+.liked_users_container {
+    height: 100%;
+}
+
+.liked_user_1 {
+    position: absolute;
+    top: 20%;
+    left: 6px;
+    transform: translateX(11px);
+    z-index: 1;
+}
+
+.liked_user_2 {
+    position: absolute;
+    left: 6px;
+    z-index: 2;
+    top: 20%;
+}

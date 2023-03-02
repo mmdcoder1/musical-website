@@ -10,6 +10,8 @@ import Status from './components/status/Status';
 import Instrument from './components/instruments/Instruments';
 import Products from './components/products/root/Products';
 import Articles from './components/articles/root/Articles';
+import Slider from './components/slider/root/Slider';
+import Footer from './components/footer/Footer';
 
 const App = () => {
   return (
@@ -20,6 +22,8 @@ const App = () => {
         <Instrument />
         <Products />
         <Articles />
+        <Slider />
+        <Footer />
     </div>
   );
 };

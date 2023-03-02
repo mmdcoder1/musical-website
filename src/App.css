@@ -165,15 +165,17 @@ input { font-family: rokh; }
 .pr-2 { padding-right: 2rem; }
 .pr-3 { padding-right: 3rem; }
 
+
+.section-margin { margin-left: 3rem; margin-right: 3rem; }
 /* classes end */
 
 body {
    background: rgb(255,255,255);
    background: linear-gradient(24deg, rgba(255,255,255,1) 26%, rgba(255,255,255,1) 62%, rgba(255,234,203,1) 79%, rgba(255,200,121,1) 96%);
    min-height: 100vh;
-   padding: 3rem;
    font-family: dana;
    direction: rtl;
    color: var(--black);
 }
+
 
