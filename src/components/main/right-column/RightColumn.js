@@ -11,8 +11,9 @@ const RightColumn = () => {
     return (
         <div className={styles.container}>
             <img className='mb-1' src={image} alt='عکس' />
-            <h2 className={styles.title}>با ما صدای لذتبخش و دلنشین <br />ساز های موسیقی را تجربه کنید</h2>
-            <p className={`mb-3 ${styles.text}`}>انواع ساز های موسیقی با بهترین کیفیت و ضمانت یک ساله
+            <h2 className={`${styles.title1} ${styles.title}`}>با ما صدای لذتبخش و دلنشین </h2>
+            <h2 className={`${styles.title2} ${styles.title}`}>ساز های موسیقی را تجربه کنید</h2>
+            <p className={`${styles.title3} mb-3 ${styles.text}`}>انواع ساز های موسیقی با بهترین کیفیت و ضمانت یک ساله
                 <br />
                 در بزرگترین فروشگاه آلات موسیقی ( آرمان شاپ ) </p>
             <div className='flex gap-1 mt-3'>

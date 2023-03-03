@@ -1,6 +1,8 @@
 import React from 'react';
 
 //styles
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+import "animate.css/animate.min.css";
 import styles from './status.module.css';
 
 //data 
@@ -8,6 +10,7 @@ import { statusData } from './data';
 
 const Status = () => {
     return (
+        <AnimationOnScroll  animateOnce={true} animateIn='animate__fadeInUp'>
         <div className={`section-margin flex p-1 justify-around ${styles.container}`}>
             
            {
@@ -23,6 +26,7 @@ const Status = () => {
            }
 
         </div>
+        </AnimationOnScroll>
     );
 };
 

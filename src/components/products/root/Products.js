@@ -1,6 +1,8 @@
 import React from 'react';
 
 //styles
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+import "animate.css/animate.min.css";
 import styles from './products.module.css';
 
 //components
@@ -15,6 +17,7 @@ import { ArrowCircleRight } from 'iconsax-react';
 
 const Products = () => {
     return (
+        <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInUp">
         <div className={`section-margin flex gap-1 ${styles.container}`}>
             <div className='flex gap-1'>
                 <ArrowCircleRight
@@ -33,6 +36,7 @@ const Products = () => {
             </div>
             <img className={styles.shadow} src={shadow} />
         </div>
+        </AnimationOnScroll>
     );
 };
 

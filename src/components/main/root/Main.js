@@ -1,4 +1,4 @@
-import React from 'react';
+import { useEffect, useState } from 'react';
 
 //styles
 import styles from './main.module.css';
@@ -11,12 +11,32 @@ import RightColumn from '../right-column/RightColumn';
 import LeftColumn from '../left-column/LeftColumn';
 
 
+//animation
+import "animate.css/animate.min.css";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+
+const component =  <main style={{ overflow: 'hidden' }} className={`section-margin flex flex-align-start justify-space ${styles.container}`}>
+                        <RightColumn />
+                        <LeftColumn />
+                   </main>
+
 const Main = () => {
+    const [scrollAnimate, setScrollAnimate] = useState(false);
+    useEffect(() => {
+        window.addEventListener('scroll', (e) => {
+            if(window.scrollY > 800) setScrollAnimate(true);
+        })
+    })
     return (
-        <main className={`section-margin flex flex-align-start justify-space ${styles.container}`}>
-            <RightColumn />
-            <LeftColumn />
-        </main>
+        <>
+
+          {
+            (scrollAnimate) ?
+            <AnimationOnScroll animateIn="animate__fadeInDown">
+                 {component}
+            </AnimationOnScroll> : component
+          } 
+       </>
     );
 };
 

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
 .container {
     background-color: #0c0c0c;
     padding: 4rem 3rem 0rem 3rem;
@@ -93,4 +95,8 @@
 
 .arrowUpBtn:hover {
     transform: translateY(-3px);
+}
+
+.info {
+    font-family: 'Source Sans Pro', sans-serif;
 }
