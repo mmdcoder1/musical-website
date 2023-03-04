@@ -4,7 +4,7 @@ import React from 'react';
 import styles from './left-column.module.css';
 
 //images
-import image from '../../../images/main-left-image.png';
+import image from '../../../images/main-left-image1.png';
 
 const LeftColumn = () => {
     return (

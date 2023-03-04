@@ -172,7 +172,10 @@ a { outline: none; }
 
 body {
    background: rgb(255,255,255);
-   background: linear-gradient(24deg, rgba(255,255,255,1) 26%, rgba(255,255,255,1) 62%, rgba(255,234,203,1) 79%, rgba(255,200,121,1) 96%);
+   background:var(--white) url('./images/background.png');
+   background-position: top right;
+   background-size: contain;
+   background-repeat: no-repeat;
    min-height: 100vh;
    font-family: dana;
    direction: rtl;
