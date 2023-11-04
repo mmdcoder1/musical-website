@@ -69,6 +69,7 @@
     height: 2.6rem;
     border-radius: 50%;
     transition: 300ms;
+    border: none;
 }
 
 .arrowUpContainer::after {

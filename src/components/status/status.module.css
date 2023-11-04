@@ -1,6 +1,7 @@
-.container {
-    margin-top: 10rem;
+.statusContainer {
     background-color: var(--gray);
     border-radius: var(--small-radius);
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 .text { font-weight: 500; }

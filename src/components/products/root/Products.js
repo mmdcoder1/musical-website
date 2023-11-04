@@ -24,15 +24,15 @@ const Products = () => {
                     color='#999'
                     size={40}
                 />
-                <div className={styles.products}>
-                    <div className={`${styles.productsInside}`}>
-                        {
-                            productsData.map(product => {
-                                return <Product key={product.id} product={product} />
-                            })
-                        }
-                    </div>
-                </div>
+    <div className={styles.products}>
+        <div className={`${styles.productsInside}`}>
+            {
+                productsData.map(product => {
+                    return <Product key={product.id} product={product} />
+                })
+            }
+        </div>
+    </div>
             </div>
             <img className={styles.shadow} src={shadow} />
         </div>

@@ -27,7 +27,7 @@ const Footer = () => {
             </div>
             <div className='flex justify-space '>
 
-            <AnimationOnScroll animateIn='animate__fadeIn' delay={0}>
+            <AnimationOnScroll animateOnce={true} animateIn='animate__fadeIn' delay={0}>
                 <ul>
                 <AnimationOnScroll animateOnce={true} animateIn='animate__fadeInUp' delay={0} duration={0.5}>
                     <li><a className={`${styles.link} ${styles.active}`} href='#'>خانه</a></li>
@@ -48,7 +48,7 @@ const Footer = () => {
                 </ul>
             </AnimationOnScroll>
 
-            <AnimationOnScroll animateIn='animate__fadeIn' delay={100}>
+            <AnimationOnScroll animateOnce={true} animateIn='animate__fadeIn' delay={100}>
                 <div style={{ alignItems: 'unset' }} className='flex flex-column'>
                 <AnimationOnScroll animateOnce={true} animateIn='animate__fadeInUp' delay={0} duration={0.5}>
                     <a href='#'>
@@ -71,9 +71,9 @@ const Footer = () => {
                 </div>
             </AnimationOnScroll>
 
-            <AnimationOnScroll animateIn='animate__fadeIn' delay={200}>
+            <AnimationOnScroll animateOnce={true} animateIn='animate__fadeIn' delay={200}>
             <div>
-                <AnimationOnScroll animateIn='animate__fadeIn'>
+                <AnimationOnScroll animateOnce={true} animateIn='animate__fadeIn'>
                     <h4 className='mb-3'>مورد تایید</h4>
                 </AnimationOnScroll>
                  <div style={{ alignItems: 'unset' }} className='flex gap-1'>
@@ -92,21 +92,21 @@ const Footer = () => {
             </div>
             </AnimationOnScroll>
 
-            <AnimationOnScroll animateIn='animate__fadeIn' delay={300}>
+            <AnimationOnScroll animateOnce={true} animateIn='animate__fadeIn' delay={300}>
                 <div>
-                <AnimationOnScroll animateIn='animate__fadeIn' delay={0} duration={0.5}>
+                <AnimationOnScroll animateOnce={true} animateIn='animate__fadeIn' delay={0} duration={0.5}>
                     <h4 className='mb-3'>با ثبت ایمیل از خبر های آرمان شاپ مطلع شوید</h4>
                 </AnimationOnScroll>
 
-                <AnimationOnScroll animateIn='animate__fadeIn' delay={100} duration={0.5}>
+                <AnimationOnScroll animateOnce={true} animateIn='animate__fadeIn' delay={100} duration={0.5}>
                     <h4 style={{ opacity: '0.6' }} className='mb-1'>ایمیل شما</h4>
                 </AnimationOnScroll>
                     <form onSubmit={(e) => e.preventDefault()} className='flex gap-05'>
-                    <AnimationOnScroll animateIn='animate__fadeInUp' delay={200} duration={0.5}>
+                    <AnimationOnScroll animateOnce={true} animateIn='animate__fadeInUp' delay={200} duration={0.5}>
                         <input ref={inputRef} placeholder='مثال : arman.uiux@gmail.com' type='text' className={styles.input} />
                     </AnimationOnScroll>
 
-                    <AnimationOnScroll animateIn='animate__fadeInUp' delay={300} duration={0.5}>
+                    <AnimationOnScroll animateOnce={true} animateIn='animate__fadeInUp' delay={300} duration={0.5}>
                         <button onClick={click} style={{ color: 'var(--black)', background: 'var(--white)', fontWeight: 'bold' }} className='btn'>ثبت</button>
                     </AnimationOnScroll>
                     </form>
